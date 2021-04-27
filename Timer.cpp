@@ -51,13 +51,13 @@ int main() {
 			duration -= time.asSeconds();
 			fMilliseconds = std::modf(duration, &fSeconds);
 			// Change float to int
-			int intSeconds = static_cast<int>(fSeconds);
-			int intMiliseconds = static_cast<int>(fMilliseconds * 1000);
+			intSeconds = static_cast<int>(fSeconds);
+			intMilliseconds = static_cast<int>(fMilliseconds * 1000);
 			// Change int to string 
-			stringMiliseconds = std::to_string(intMiliseconds);
+			stringMiliseconds = std::to_string(intMilliseconds);
 			stringSeconds =std::to_string(intSeconds);
 			
-			if (intMiliseconds <= 0) {
+			if (intMilliseconds <= 0) {
 				stringMiliseconds = "000";  
 			}
 

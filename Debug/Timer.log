@@ -1,4 +1,2 @@
 ﻿  Timer.cpp
-C:\Users\BatGirl\Documents\Code\C++\sfml-countdown-timer\Timer.cpp(26,6): warning C4101: 'intMilliseconds': unreferenced local variable
-C:\Users\BatGirl\Documents\Code\C++\sfml-countdown-timer\Timer.cpp(26,23): warning C4101: 'intSeconds': unreferenced local variable
   Timer.vcxproj -> C:\Users\BatGirl\Documents\Code\C++\sfml-countdown-timer\Debug\Timer.exe
