@@ -2,7 +2,8 @@
 
 int main() {
 	// Fullscreen Window //
-	sf::RenderWindow window(sf::VideoMode(1920, 1080), "Timer", sf::Style::Fullscreen);
+	sf::VideoMode vm(1920, 1080);
+	sf::RenderWindow window(vm, "Timer", sf::Style::Fullscreen);
 
 	// Text & Font 
 	sf::Font timerFont;
