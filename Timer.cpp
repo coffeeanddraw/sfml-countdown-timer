@@ -21,8 +21,8 @@ int main() {
 	// Timer Variables //
 	sf::Clock clock;
 	float duration = 20.0f;
-	float fMiliseconds, fSeconds;
-	int intMiliseconds, intSeconds;
+	float fMilliseconds, fSeconds;
+	int intMilliseconds, intSeconds;
 	sf::String stringMiliseconds;
 	sf::String stringSeconds;
 	sf::String timerString;
@@ -48,10 +48,10 @@ int main() {
 		if (duration > 0) {
 			// Calculate countdown
 			duration -= time.asSeconds();
-			fMiliseconds = std::modf(duration, &fSeconds);
+			fMilliseconds = std::modf(duration, &fSeconds);
 			// Change float to int
 			int intSeconds = static_cast<int>(fSeconds);
-			int intMiliseconds = static_cast<int>(fMiliseconds * 1000);
+			int intMiliseconds = static_cast<int>(fMilliseconds * 1000);
 			// Change int to string 
 			stringMiliseconds = std::to_string(intMiliseconds);
 			stringSeconds =std::to_string(intSeconds);
