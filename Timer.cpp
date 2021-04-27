@@ -24,7 +24,7 @@ int main() {
 	float duration = 20.0f;
 	float fMilliseconds, fSeconds;
 	int intMilliseconds, intSeconds;
-	sf::String stringMiliseconds;
+	sf::String stringMilliseconds;
 	sf::String stringSeconds;
 	sf::String timerString;
 
@@ -54,11 +54,11 @@ int main() {
 			intSeconds = static_cast<int>(fSeconds);
 			intMilliseconds = static_cast<int>(fMilliseconds * 1000);
 			// Change int to string 
-			stringMiliseconds = std::to_string(intMilliseconds);
+			stringMilliseconds = std::to_string(intMilliseconds);
 			stringSeconds =std::to_string(intSeconds);
 			
 			if (intMilliseconds <= 0) {
-				stringMiliseconds = "000";  
+				stringMilliseconds = "000";  
 			}
 
 			if (intSeconds <= 0) {
@@ -68,7 +68,7 @@ int main() {
 				stringSeconds = "0" + stringSeconds; 
 			}
 
-			timerString = stringSeconds + ":" + stringMiliseconds;
+			timerString = stringSeconds + ":" + stringMilliseconds;
 			timerText.setString(timerString);
 		}
 
